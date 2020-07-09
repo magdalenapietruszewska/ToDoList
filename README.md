@@ -17,6 +17,6 @@ $ npm start
 
 
 
-Click here to play: https://magdalenapietruszewska.github.io/ToDoList/
+Click here: https://magdalenapietruszewska.github.io/ToDoList/
 
 
