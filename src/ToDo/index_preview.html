@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Coders Lab - Moduł 5 React</title>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+  <div class="jumbotron">
+    <h1 class="display-4">Add new task</h1>
+    <form>
+      <div class="form-group">
+        <input class="form-control" name="title" placeholder="Title" type="text">
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="description" placeholder="Description" type="text">
+      </div>
+      <input class="btn btn-primary" type="submit" value="Add task"/>
+    </form>
+  </div>
+
+
+  <section class="card">
+    <div class="card-body">
+      <h5 class="card-title">{task title}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{task description}</h6>
+      <a class="card-link" href="#">Add operation</a>
+      <a class="card-link" href="#">Finish</a>
+
+      <form class="mt-3">
+        <div class="form-group">
+          <input class="form-control" name="description" placeholder="Operation description" type="text">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Add operation to task"/>
+      </form>
+    </div>
+
+    <ul class="list-group list-group-flush">
+
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Podstawowy widok operacji
+        <div>
+          <button class="btn btn-primary">Add time manually</button>
+          <button class="btn btn-primary ml-3">Start timer</button>
+        </div>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Po kliknięciu "Start timer"
+        <div>
+          <span class="btn btn-warning">Czas: 1h 23m</span>
+          <button class="btn btn-primary ml-3">Stop timer</button>
+        </div>
+      </li>
+
+      <li class="list-group-item task-operation d-flex justify-content-between align-items-center">
+        Po kliknięciu "Add time manually"
+        <form class="d-flex">
+          <input class="form-control" name="time" placeholder="Type in spend time" type="text">
+          <button class="btn btn-primary ml-3">Save</button>
+        </form>
+      </li>
+
+
+      <li class="list-group-item">
+        Po zapisaniu czasu (manualnie albo timer)
+        <span class="badge badge-primary badge-pill">Czas: 1h 23m</span>
+      </li>
+
+    </ul>
+  </section>
+
+</div>
+
+</body>
+</html>
